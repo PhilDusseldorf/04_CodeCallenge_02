@@ -17,18 +17,18 @@ Alter 13-17 // Cola
 /* Getränke-Challenge */
 
 // set variables
-let standard = 101;
-let minAge = 0;
-let maxAge = 100;
+const minAge = 0;
+const maxAge = 100;
+let standard = maxAge + 1;
 let drinkerAge = standard;
 let drinkerName = prompt("Person: ");   // get a name from user
 
 // get the right age
-// ask until age is given in correct rang (0-100 years)
+// ask until age is given in correct range (0-100 years)
 while (drinkerAge < minAge || drinkerAge > maxAge)
 {
     // get an age from user
-    drinkerAge = parseInt(prompt("Person's age (0-100 years)): ");
+    drinkerAge = parseInt(prompt("Person's age (0-100 years): "));
     
     // see if a number was entered
     if (isNaN(drinkerAge))
